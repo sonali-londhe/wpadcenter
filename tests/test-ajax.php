@@ -275,5 +275,5 @@ class AjaxTest extends WP_Ajax_UnitTestCase {
 		self::$wpadcenter_admin->wpadcenter_add_custom_filters();
 		$output = ob_get_clean();
 		$this->assertTrue( is_string( $output ) && ( wp_strip_all_tags( $output ) !== $output ) );
-	}
+  }
 }
